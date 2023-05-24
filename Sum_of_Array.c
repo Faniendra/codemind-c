@@ -1,16 +1,21 @@
-#include<stdio.h>
-int main()
-{
-    int n,i,sum=0;
-    scanf("%d",&n);
-    int a[n];
-    for(i=0;i<n;i++)
-    {
-        scanf("%d",&a[i]);
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int N;
+int map[1000];
+int main() {
+  long int sum =0;
+    scanf("%d",&N);
+    for(int i = 0; i<N; i++)
+        {
+      scanf("%d",&map[i]);
     }
-    for(i=0;i<n;i++)
-    {
-        sum=sum+a[i];
+    for(int i=0; i<N;i++)
+        {
+        sum += map[i];
     }
-    printf("%d",sum);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    printf("%ld",sum);
+    return 0;
 }
